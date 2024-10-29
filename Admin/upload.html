@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/track.css">
+    <title>CARGO MERIT</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .form div{
+            width: 40%;
+            color: white;
+        }
+        .form div input{
+            width: 100%;
+            margin-top: 5px;
+        }
+        .form div p{
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+
+
+    
+    <div class="form">
+        <h1>UPLOAD</h1>
+    
+        <form action="backend.php" method="get">
+
+            
+            <input type="text" name="tNumber" placeholder="Track Number" required>
+            <input type="text" name="invoice" placeholder="$270" required>
+            <input type="text" name="rName" placeholder="Receiver's Name" required>
+            <input type="tel" name="rPhone" placeholder="Receiver's phone number" required>
+            <input type="email" name="rEmail"  placeholder="Receiver's email" required>
+            <input type="text" name="rAddress" placeholder="Receiver's Address" required>
+            <input type="text" name="sName" placeholder="Sender's Name" required>
+            <input type="tel" name="sPhone"  placeholder="Sender's phone number" required>
+            <input type="email" name="sEmail"  placeholder="Sender's email" required>
+            <input type="text" name="sAddress" placeholder="Sender's Address" required>
+            <input type="text" name="item" placeholder="Item" required>
+            <input type="number" name="itemNumber" placeholder="Number of item(s)" required>
+            <input type="text" name="destination" placeholder="Destination" required>
+            <div>
+                <p>Date Sent</p>
+                <input type="date" name="datesent"  placeholder="Date sent" required>
+            </div>
+            <div>
+                <p>Delivery Date</p>
+                <input type="date" name="deliverydate" placeholder="Estimated delivery date" required>
+            </div>
+            <input type="text" name="first" placeholder="parcel first destination" required>
+            <input type="text" name="second" placeholder="parcel second destination" required>
+            <input type="text" name="third" placeholder="parcel third destination" required>
+            <input type="text" name="status" placeholder="Status" required>
+        
+            <input type="submit" value="ENTER" class="send">
+        
+        </form>.
+    </div>
+    
+</body>
+</html>
